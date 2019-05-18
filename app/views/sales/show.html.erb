@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rksaleinvoice:</strong>
+  <%= @sale.rksaleinvoice %>
+</p>
+
+<p>
+  <strong>Rksaledate:</strong>
+  <%= @sale.rksaledate %>
+</p>
+
+<p>
+  <strong>Rksaleduedate:</strong>
+  <%= @sale.rksaleduedate %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @sale.customer %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @sale.product %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @sale.employee %>
+</p>
+
+<p>
+  <strong>Accountjournal:</strong>
+  <%= @sale.accountjournal %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

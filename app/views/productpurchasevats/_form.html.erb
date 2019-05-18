@@ -1,0 +1,214 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <%= form_with(model: productpurchasevat, local: true) do |f| %>
+          <% if productpurchasevat.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(productpurchasevat.errors.count, "error") %>
+                prohibited this productpurchasevat from being saved:</h2>
+              <ul>
+                <% productpurchasevat.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Account</label>
+                  <%= collection_select( :productpurchasevat, :chartaccount_id, Chartaccount.all, :id, :rkcoaname, {}, { :multiple => false, :class=>'form-control m-b' } ) %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Supplier Name</label>
+                  <%= collection_select( :productpurchasevat, :supplier_id, Supplier.all, :id, :rksuppliername, {}, { :multiple => false, :class=>'form-control m-b' } ) %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Invoice No.</label>
+                  <%= f.text_field :rkpurchaseinvoiceno, :placeholder=>"Enter Invoice No.", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Purchase Date</label>
+                  <%= f.date_field :rkpurchasedate, :placeholder=>"Enter Purchase Date", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Due Date</label>
+                  <%= f.date_field :rkpurchaseduedate, :placeholder=>"Enter Due Date", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Agent Name</label>
+                  <%= collection_select( :productpurchasevat, :employee_id, Employee.all, :id, :rkempname, {}, { :multiple => false, :class=>'form-control m-b' } ) %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Transport Name</label>
+                  <%= f.text_field :rktransportname, :placeholder=>"Enter Transport Name", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>GR No.</label>
+                  <%= f.text_field :rkpurchasegrno, :placeholder=>"Enter Purchase GR No.", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Receive Date</label>
+                  <%= f.date_field :rkgoodsreceived, :placeholder=>"Enter Goods Received Date", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>No. of Case</label>
+                  <%= f.text_field :rkpurchasenocase, :placeholder=>"Enter No. of Case", :class=>"form-control", :required=>'' %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered invoice_grid_fields">
+            <thead>
+              <tr class="add_fields">
+                <th>Product</th>
+                <th>Batch</th>
+                <th>UOM</th>
+                <th>Exp</th>
+                <th>Rate</th>
+                <th>Qty</th>
+                <th>Free</th>
+                <th style="display:none">Sub CC</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody class='fields'>
+              <%= f.fields_for :purchproditemvats do |builder| %>
+              <%= render 'purchproditemvat', f: builder %>
+            <% end %>
+          </tbody>
+          <tr>
+
+            <td colspan="11">
+
+<%= link_to_add_association 'Add Product', f, :purchproditemvats, class: 'btn btn-primary', data: { association_insertion_node: '.fields', association_insertion_method: :append } %>
+      </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Total CC</strong>
+            </td>
+            <td>
+              <%= f.text_field :rkpurchasetotalcc, :class=>"form-control",:id=>"totalcc" ,:style=>"color: red" ,:readonly=>'' %>
+            </td>
+            <td>
+              <strong>CC %</strong>
+            </td>
+            <td>
+              <%= f.text_field :rkpurchaseccpercent, :class=>"form-control",:id=>"cpercent" ,:style=>"color: red"  %>
+            </td>
+            <td>
+              <strong>CC Added</strong>
+            </td>
+            <td>
+              <%= f.text_field :rkpurchaseccadded, :class=>"form-control",:id=>"ccadd" ,:style=>"color: red",:readonly=>''  %>
+            </td>
+            <td>
+              <strong>Sub Total</strong>
+            </td>
+            <td>
+              <%= f.text_field :rkpurchasesubtotal, :class=>"form-control",:id=>"subtotal" ,:style=>"color: red",:readonly=>''  %>
+            </tr>
+            <tr>
+              <td>
+                <strong>Total:
+                </strong>
+              </td>
+              <td>
+                <%= f.text_field :rkpurchaseunittotal, :class=>"form-control",:id=>"totalQty" ,:style=>"color: red",:readonly=>''  %>
+                Units</td>
+              <td>
+                <strong>Discount</strong>
+              </td>
+              <td>
+                <%= f.text_field :rkpurchasediscount, :class=>"form-control",:id=>"discount" ,:style=>"color: red" %>
+                <td>
+                  <strong>Shipping</strong>
+                </td>
+                <td>
+                  <%= f.text_field :rkpurchaseshipping, :class=>"form-control",:id=>"shipping" ,:style=>"color: red" %>
+                  <td>
+                    <strong>Grand Total</strong>
+                  </td>
+                  <td>
+                    <%= f.text_field :rkpurchasegrandtotal, :class=>"form-control",:id=>"grandTotal" ,:style=>"color: red" %>
+                  </tr>
+                  <tr>
+                    <td colspan="11">
+                      <span id="wo">0</span></td>
+                  </tr>
+                </table>
+                <%= f.submit "Apply & Submit", :class=>"btn btn-sm btn-primary pull-right m-t-n-xs" %>
+                <%= link_to 'Back', productpurchasevats_path, :class=>"btn btn-sm btn-primary m-t-n-xs" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+  jQuery(document).ready(function () {
+    jQuery().invoicevat({
+      remove_record: ".remove_record",
+      del: ".del",
+      parentClass: ".add_fields",
+      invoice_grid_fields: ".invoice_grid_fields",
+      product: ".product",
+      batch: ".batch",
+      uom: ".uom",
+      exp: ".exp",
+      price: ".price",
+      qty: ".qty",
+      free: ".free",
+      total: ".total",
+      subcc: ".subcc",
+      totalcc: "#totalcc",
+      totalQty: "#totalQty",
+      subtotal: "#subtotal",
+      discount: "#discount",
+      shipping: "#shipping",
+      cpercent: "#cpercent",
+      ccadd: "#ccadd",
+      grandTotal: "#grandTotal",
+      //wo:"#wo"
+
+    });
+  });
+</script>

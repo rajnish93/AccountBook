@@ -1,0 +1,7 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "purchasegst.js" %>
+  <%= javascript_include_tag "jquery.invoice.js" %>
+<% end %>
+
+
+<%= yield :javascript_includes %>

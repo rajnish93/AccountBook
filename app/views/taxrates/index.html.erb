@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Taxrates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chartaccount</th>
+      <th>Rktaxtype</th>
+      <th>Rktaxname</th>
+      <th>Rktaxpercent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @taxrates.each do |taxrate| %>
+      <tr>
+        <td><%= taxrate.chartaccount %></td>
+        <td><%= taxrate.rktaxtype %></td>
+        <td><%= taxrate.rktaxname %></td>
+        <td><%= taxrate.rktaxpercent %></td>
+        <td><%= link_to 'Show', taxrate %></td>
+        <td><%= link_to 'Edit', edit_taxrate_path(taxrate) %></td>
+        <td><%= link_to 'Destroy', taxrate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Taxrate', new_taxrate_path %>

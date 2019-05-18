@@ -1,0 +1,80 @@
+<tr class="nested-fields">
+  <td class="delete-btn">
+    <%= f.text_field :rkpurchprodname, :placeholder=>"Product", :class=>"form-control product", :required=>'' %>
+<%= link_to_remove_association "X", f, class: 'remove' %>
+
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodhsncode, :placeholder=>"HSN", :class=>"form-control hsn", :required=>'' %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodbatch, :placeholder=>"Batch", :class=>"form-control batch", :required=>'' %>
+
+  </td>
+  <td>
+<%= f.text_field :rkpurchproduom, :placeholder=>"UOM", :class=>"form-control uom", :required=>'' %>
+
+  </td>
+  <td>
+<%= f.text_field :rkpurchprodexp, :placeholder=>"Expiry", :class=>"form-control exp", :required=>'' %>
+
+  </td>
+  <td>
+<%= f.text_field :rkpurchprodrate, :placeholder=>"Rate", :class=>"form-control price", :required=>'' %>
+
+  </td>
+  <td>
+<%= f.text_field :rkpurchprodqty, :placeholder=>"Quantity", :class=>"form-control qty", :required=>'' %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodigst, :placeholder=>"IGST", :class=>"form-control igst" %>
+
+
+  </td>
+  <td>
+<%= f.text_field :rkpurchprodcgst, :placeholder=>"CGST", :class=>"form-control cgst" %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodsgst, :placeholder=>"SGST", :class=>"form-control sgst" %>
+
+  </td>
+  <td style="display:none">
+    <%= f.hidden_field :rkpurchprodigstval, :class=>"form-control subigst" %>
+
+  </td>
+  <td style="display:none">
+    <%= f.hidden_field :rkpurchprodcgstval, :class=>"form-control subcgst" %>
+  </td>
+  <td style="display:none">
+    <%= f.hidden_field :rkpurchprodsgstval, :class=>"form-control subsgst" %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodamount, :class=>"form-control total",:readonly=>'' %>
+
+  </td>
+</tr>
+<style>
+  .delete-btn {
+    position: relative;
+  }
+  .remove {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+    background: #EEEEEE;
+    font-weight: bold;
+    padding: 0 3px;
+    border: 1px solid;
+    top: -6px;
+    left: -6px;
+    font-family: Verdana;
+    font-size: 12px;
+  }
+
+  </style>

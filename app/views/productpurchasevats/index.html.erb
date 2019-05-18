@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Productpurchasevats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chartaccount</th>
+      <th>Supplier</th>
+      <th>Employee</th>
+      <th>Rkpurchaseinvoiceno</th>
+      <th>Rkpurchasedate</th>
+      <th>Rkpurchaseduedate</th>
+      <th>Rktransportname</th>
+      <th>Rkpurchasegrno</th>
+      <th>Rkgoodsreceived</th>
+      <th>Rkpurchasenocase</th>
+      <th>Rkpurchaseccpercent</th>
+      <th>Rkpurchasesubtotal</th>
+      <th>Rkpurchasetotalcc</th>
+      <th>Rkpurchaseccadded</th>
+      <th>Rkpurchasediscount</th>
+      <th>Rkpurchaseshipping</th>
+      <th>Rkpurchasegrandtotal</th>
+      <th>Rkpurchaseinwords</th>
+      <th>Rkpurchaseunittotal</th>
+      <th>Rkpurchasevatpercent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @productpurchasevats.each do |productpurchasevat| %>
+      <tr>
+        <td><%= productpurchasevat.chartaccount %></td>
+        <td><%= productpurchasevat.supplier %></td>
+        <td><%= productpurchasevat.employee %></td>
+        <td><%= productpurchasevat.rkpurchaseinvoiceno %></td>
+        <td><%= productpurchasevat.rkpurchasedate %></td>
+        <td><%= productpurchasevat.rkpurchaseduedate %></td>
+        <td><%= productpurchasevat.rktransportname %></td>
+        <td><%= productpurchasevat.rkpurchasegrno %></td>
+        <td><%= productpurchasevat.rkgoodsreceived %></td>
+        <td><%= productpurchasevat.rkpurchasenocase %></td>
+        <td><%= productpurchasevat.rkpurchaseccpercent %></td>
+        <td><%= productpurchasevat.rkpurchasesubtotal %></td>
+        <td><%= productpurchasevat.rkpurchasetotalcc %></td>
+        <td><%= productpurchasevat.rkpurchaseccadded %></td>
+        <td><%= productpurchasevat.rkpurchasediscount %></td>
+        <td><%= productpurchasevat.rkpurchaseshipping %></td>
+        <td><%= productpurchasevat.rkpurchasegrandtotal %></td>
+        <td><%= productpurchasevat.rkpurchaseinwords %></td>
+        <td><%= productpurchasevat.rkpurchaseunittotal %></td>
+        <td><%= productpurchasevat.rkpurchasevatpercent %></td>
+        <td><%= link_to 'Show', productpurchasevat %></td>
+        <td><%= link_to 'Edit', edit_productpurchasevat_path(productpurchasevat) %></td>
+        <td><%= link_to 'Destroy', productpurchasevat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Productpurchasevat', new_productpurchasevat_path %>

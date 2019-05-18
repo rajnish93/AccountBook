@@ -1,0 +1,71 @@
+<tr class="add_fields"><td class="delete-btn"><%= f.text_field :_destroy,:style=>"display:none", :class=>"form-control del" %>
+  <%= f.select :product_id, options_for_select(@products.collect { |product|
+      [product.rkproductname.titleize, product.id] }, :selected=> f.object.product_id), {:prompt=>"Select an Item"}, { :class=>"form-control product" } %>
+    <%= link_to 'X', '#', class: 'remove_record' %>
+  </td>
+  <td>
+
+
+<%= f.select :rkpurchprobatch, options_for_select(@batches, f.object.rkpurchprobatch), {:include_blank => '--Select Item--'}, { :class => 'form-control batch' } %>
+  </td>
+
+  <td>
+    <%= f.text_field :rkpurchproduom, :class=>"form-control uom", :required=>'' %>
+
+
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodexp, :readonly=>'', :class=>"form-control exp", :required=>'' %>
+
+
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodrate, :class=>"form-control price", :required=>'' %>
+
+
+
+
+  </td>
+  <td>
+
+<%= f.text_field :rkpurchprodqty, :placeholder=>"Quantity", :class=>"form-control qty", :required=>'' %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodfree, :placeholder=>"Free", :class=>"form-control free" %>
+
+
+  </td>
+
+
+  <td style="display:none">
+    <%= f.hidden_field :rkpurchprodsubval, :class=>"form-control subcc" %>
+
+  </td>
+  <td>
+    <%= f.text_field :rkpurchprodamount, :class=>"form-control total",:readonly=>'' %>
+
+  </td>
+</tr>
+<style>
+  .delete-btn {
+    position: relative;
+  }
+  .remove_record {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+    background: #EEEEEE;
+    font-weight: bold;
+    padding: 0 3px;
+    border: 1px solid;
+    top: -6px;
+    left: -6px;
+    font-family: Verdana;
+    font-size: 12px;
+  }
+
+  </style>

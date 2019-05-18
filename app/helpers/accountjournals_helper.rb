@@ -1,0 +1,2 @@
+module AccountjournalsHelper
+end

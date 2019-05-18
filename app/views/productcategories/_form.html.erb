@@ -1,0 +1,32 @@
+<%= form_with(model: productcategory, local: true) do |form| %>
+  <% if productcategory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(productcategory.errors.count, "error") %> prohibited this productcategory from being saved:</h2>
+
+      <ul>
+      <% productcategory.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :rkproductcategorycode %>
+    <%= form.text_field :rkproductcategorycode, id: :productcategory_rkproductcategorycode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkproductcategoryname %>
+    <%= form.text_field :rkproductcategoryname, id: :productcategory_rkproductcategoryname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chartaccount_id %>
+    <%= form.text_field :chartaccount_id, id: :productcategory_chartaccount_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,113 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li>
+        <div class="dropdown profile-element">
+          <span>
+            <h2 style="font-size: 30px; text-align: center; margin-bottom: 20px; color: #f70b0b">GIKR
+              <span style="color: #1ab394; font-weight: 900">Infotech</span></h2>
+          </span>
+        </div>
+        <div class="logo-element">
+          GIKR
+        </div>
+      </li>
+      <li class="<%= is_active_controller('dashboard') %>">
+        <%= link_to dashboard_index_path do %>
+        <i class="fa fa-th-large"></i>
+        <span class="nav-label">Dashboards</span>
+      <% end %>
+    </li>
+    <% if policy(Order).index? %>
+      <li class="<%= is_active_controller('orders') %>">
+        <a href="#">
+          <i class="fa fa-diamond"></i>
+          <span class="nav-label">Order</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse <%= is_active_controller('orders', 'in') %>">
+          <li class="<%= is_active_action('index') %>"><%= link_to "All Orders", orders_path %></li>
+          <li class="<%= is_active_action('new') %>"><%= link_to "Add Order", new_order_path %></li>
+        </ul>
+      </li>
+    <% end %>
+    <% if policy(Accountgroup).index? %>
+      <li class="<%= is_active_controller('accountgroups') %> || <%= is_active_controller('chartaccounts') %> || <%= is_active_controller('accountjournals') %> ">
+        <a href="#">
+          <i class="fa fa-diamond"></i>
+          <span class="nav-label">Account</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse <%= is_active_controller('accountgroups', 'in') %>">
+          <li class="<%= is_active_controller('accountgroups') %>"><%= link_to "Account Groups", accountgroups_path %></li>
+          <li class="<%= is_active_controller('chartaccounts') %>"><%= link_to "Ledgers", chartaccounts_path %></li>
+          <li class="<%= is_active_controller('accountjournals') %>"><%= link_to "Account Journals", accountjournals_path %></li>
+        </ul>
+      </li>
+    <% end %>
+    <% if policy(Product).index? %>
+      <li
+        class="<%= is_active_controller('products') %> || <%= is_active_controller('productcategories') %> || <%= is_active_controller('suppliers') %> || <%= is_active_controller('products') %> || <%= is_active_controller('batches') %> || <%= is_active_controller('productpurchasegsts') || is_active_controller('productpurchasevats') %> ">
+        <a href="#">
+          <i class="fa fa-diamond"></i>
+          <span class="nav-label">Product</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse <%= is_active_controller('products', 'in') %>">
+          <li class="<%= is_active_controller('suppliers') %>"><%= link_to "Supplier", suppliers_path %></li>
+          <li class="<%= is_active_controller('productcategories') %>"><%= link_to "Product Category", productcategories_path %></li>
+          <li class="<%= is_active_controller('products') %>"><%= link_to "Product", products_path %></li>
+          <li class="<%= is_active_controller('batches') %>"><%= link_to "Batch", batches_path %></li>
+          <li class="<%= is_active_controller('productpurchasegsts') %>"><%= link_to "GST Purchases", productpurchasegsts_path %></li>
+          <li class="<%= is_active_controller('productpurchasevats') %>"><%= link_to "VAT Purchases", productpurchasevats_path %></li>
+        </ul>
+      </li>
+    <% end %>
+    <% if policy(Customer).index? || policy(Sale).index? %>
+      <li class="<%= is_active_controller('customers') %> || <%= is_active_controller('sales') %> ">
+        <a href="#">
+          <i class="fa fa-diamond"></i>
+          <span class="nav-label">Sales</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse <%= is_active_controller('customers','in') %> || <%= is_active_controller('sales','in') %>">
+          <% if policy(Customer).index? %>
+            <li class="<%= is_active_controller('customers') %>"><%= link_to "Customer", customers_path %></li>
+          <% end %>
+          <% if policy(Sale).index? %>
+            <li class="<%= is_active_controller('sales') %>"><%= link_to "Sales", sales_path %></li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+    <% if policy(Department).index? %>
+      <li class="<%= is_active_controller('departments') %> || <%= is_active_controller('employees') %>">
+        <a href="#">
+          <i class="fa fa-diamond"></i>
+          <span class="nav-label">Company</span>
+          <span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse <%= is_active_controller('departments', 'in') %>">
+          <li class="<%= is_active_controller('departments') %>"><%= link_to "Department", departments_path %></li>
+          <li class="<%= is_active_controller('employees') %>"><%= link_to "Employee", employees_path %></li>
+        </ul>
+      </li>
+    <% end %>
+    <% if policy(User).index? %>
+      <li class="<%= is_active_controller('users') %>">
+        <%= link_to users_path do %>
+        <i class="fa fa-user"></i>
+        <span class="nav-label">Users</span>
+      <% end %>
+    </li>
+  <% end %>
+  <li>
+    <a href="#">
+      <i class="fa fa-cog fa-spin"></i>
+      <span class="nav-label">Profile
+      </span>
+      <span class="fa arrow"></span>
+    </a>
+    <ul class="nav nav-second-level">
+      <li><%= link_to "Change Password", edit_user_registration_path %></li>
+      <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</nav>

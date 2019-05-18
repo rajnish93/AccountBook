@@ -1,0 +1,846 @@
+2018-05-03 22:59:49[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217758264800'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217758264800'
+
+2018-05-03 22:59:52[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217884539060'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217884539060'
+
+2018-05-03 22:59:53[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_47167396116640'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_47167396116640'
+
+2018-05-03 22:59:55[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217801013480'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217801013480'
+
+2018-05-03 22:59:56[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217725880080'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217725880080'
+
+2018-05-03 22:59:58[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217718896000'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217718896000'
+
+2018-05-03 22:59:59[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_47167401556240'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_47167401556240'
+
+2018-05-03 23:00:00[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217820505100'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217820505100'
+
+2018-05-03 23:00:01[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70218053077960'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70218053077960'
+
+2018-05-03 23:00:02[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217719087380'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217719087380'
+
+2018-05-03 23:01:02[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___2490869215974316213_70217749700780'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___2490869215974316213_70217749700780'
+
+2018-05-03 23:03:12[WARN] user: devlop
+GET /chartaccounts
+USE eager loading detected
+  Chartaccount => [:accountgroup]
+  Add to your finder: :includes => [:accountgroup]
+Call stack
+  /home/devlop/testbook_gst/app/views/chartaccounts/index.html.erb:41:in `block in _app_views_chartaccounts_index_html_erb___4232256883838927570_70217718408460'
+  /home/devlop/testbook_gst/app/views/chartaccounts/index.html.erb:36:in `_app_views_chartaccounts_index_html_erb___4232256883838927570_70217718408460'
+
+2018-05-04 13:59:27[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___3723999114577283596_69931310659680'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___3723999114577283596_69931310659680'
+
+2018-05-07 13:34:11[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+
+2018-05-07 13:34:11[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+
+2018-05-07 13:34:11[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288952552000'
+
+2018-05-07 13:34:19[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+
+2018-05-07 13:34:19[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+
+2018-05-07 13:34:19[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190533960'
+
+2018-05-07 13:34:22[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+
+2018-05-07 13:34:22[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+
+2018-05-07 13:34:22[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70288951948520'
+
+2018-05-07 13:34:42[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+
+2018-05-07 13:34:42[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+
+2018-05-07 13:34:42[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___2825120422902678898_70289190980880'
+
+2018-05-07 13:35:14[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+
+2018-05-07 13:35:14[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+
+2018-05-07 13:35:14[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338045045740'
+
+2018-05-07 13:36:44[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+
+2018-05-07 13:36:44[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+
+2018-05-07 13:36:44[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920003560'
+
+2018-05-07 13:36:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+
+2018-05-07 13:36:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+
+2018-05-07 13:36:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_47051193151920'
+
+2018-05-07 13:36:46[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+
+2018-05-07 13:36:46[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+
+2018-05-07 13:36:46[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337920846200'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338046958180'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+
+2018-05-07 13:36:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70338047257620'
+
+2018-05-07 13:36:48[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+
+2018-05-07 13:36:48[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+
+2018-05-07 13:36:48[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337913485620'
+
+2018-05-07 13:36:49[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+
+2018-05-07 13:36:49[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+
+2018-05-07 13:36:49[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2096565852214488591_70337917255140'
+
+2018-05-07 13:37:08[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+
+2018-05-07 13:37:08[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+
+2018-05-07 13:37:08[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955891849060'
+
+2018-05-07 13:37:21[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+
+2018-05-07 13:37:21[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+
+2018-05-07 13:37:21[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_47455184414200'
+
+2018-05-07 13:37:23[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+
+2018-05-07 13:37:23[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+
+2018-05-07 13:37:23[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3979992289397358830_69955895084460'
+
+2018-05-07 13:37:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+
+2018-05-07 13:37:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+
+2018-05-07 13:37:45[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172056906940'
+
+2018-05-07 13:46:31[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+
+2018-05-07 13:46:31[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+
+2018-05-07 13:46:31[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___3268609113476408397_70172253793540'
+
+2018-05-07 13:49:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:34:in `block in _app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+
+2018-05-07 13:49:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+
+2018-05-07 13:49:47[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb__2512903793315653924_70322742547180'
+
+2018-05-07 13:55:21[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:35:in `block in _app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032564619760'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032564619760'
+
+2018-05-07 13:55:21[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032564619760'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032564619760'
+
+2018-05-07 13:55:55[WARN] user: devlop
+GET /productpurchasegsts
+USE eager loading detected
+  Productpurchasegst => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:36:in `block in _app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032429648760'
+  /home/devlop/testbook_gst/app/views/productpurchasegsts/index.html.erb:32:in `_app_views_productpurchasegsts_index_html_erb___1503778562092792490_70032429648760'
+
+2018-05-07 13:56:54[WARN] user: devlop
+GET /chartaccounts
+USE eager loading detected
+  Chartaccount => [:accountgroup]
+  Add to your finder: :includes => [:accountgroup]
+Call stack
+  /home/devlop/testbook_gst/app/views/chartaccounts/index.html.erb:41:in `block in _app_views_chartaccounts_index_html_erb__4248602890089659689_70205839804100'
+  /home/devlop/testbook_gst/app/views/chartaccounts/index.html.erb:36:in `_app_views_chartaccounts_index_html_erb__4248602890089659689_70205839804100'
+
+2018-05-07 14:05:58[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:47:in `block in _app_views_products_index_html_erb___3995666624377947427_70205541154280'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb___3995666624377947427_70205541154280'
+
+2018-05-07 14:05:58[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:productcategory]
+  Add to your finder: :includes => [:productcategory]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:48:in `block in _app_views_products_index_html_erb___3995666624377947427_70205541154280'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb___3995666624377947427_70205541154280'
+
+2018-05-07 14:05:58[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:49:in `block in _app_views_products_index_html_erb___3995666624377947427_70205541154280'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb___3995666624377947427_70205541154280'
+
+2018-05-07 14:59:56[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb__606293899593081110_69897340122280'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb__606293899593081110_69897340122280'
+
+2018-05-07 18:59:59[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb__3089876752431315797_70145245721400'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb__3089876752431315797_70145245721400'
+
+2018-05-07 19:35:35[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:47:in `block in _app_views_products_index_html_erb__1442502448192937940_69959652656740'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb__1442502448192937940_69959652656740'
+
+2018-05-07 19:35:35[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:productcategory]
+  Add to your finder: :includes => [:productcategory]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:48:in `block in _app_views_products_index_html_erb__1442502448192937940_69959652656740'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb__1442502448192937940_69959652656740'
+
+2018-05-07 19:35:35[WARN] user: devlop
+GET /products
+USE eager loading detected
+  Product => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:49:in `block in _app_views_products_index_html_erb__1442502448192937940_69959652656740'
+  /home/devlop/testbook_gst/app/views/products/index.html.erb:41:in `_app_views_products_index_html_erb__1442502448192937940_69959652656740'
+
+2018-05-07 19:38:04[WARN] user: devlop
+GET /batches
+USE eager loading detected
+  Batch => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:50:in `block in _app_views_batches_index_html_erb___723788668366136608_70034053393800'
+  /home/devlop/testbook_gst/app/views/batches/index.html.erb:45:in `_app_views_batches_index_html_erb___723788668366136608_70034053393800'
+
+2018-05-09 17:00:35[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 17:00:35[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:batch]
+  Add to your finder: :includes => [:batch]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 17:07:52[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 17:07:52[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:batch]
+  Add to your finder: :includes => [:batch]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 17:08:25[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 17:08:25[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:batch]
+  Add to your finder: :includes => [:batch]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-09 18:33:22[WARN] user: devlop
+GET /suppliers
+USE eager loading detected
+  Supplier => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/suppliers/index.html.erb:65:in `block in _app_views_suppliers_index_html_erb__4591902158873057125_69959048977800'
+  /home/devlop/testbook_gst/app/views/suppliers/index.html.erb:49:in `_app_views_suppliers_index_html_erb__4591902158873057125_69959048977800'
+
+2018-05-13 16:20:51[WARN] user: devlop
+GET /productpurchasevats
+USE eager loading detected
+  Productpurchasevat => [:chartaccount]
+  Add to your finder: :includes => [:chartaccount]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:35:in `block in _app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:33:in `_app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+
+2018-05-13 16:20:51[WARN] user: devlop
+GET /productpurchasevats
+USE eager loading detected
+  Productpurchasevat => [:supplier]
+  Add to your finder: :includes => [:supplier]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:36:in `block in _app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:33:in `_app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+
+2018-05-13 16:20:51[WARN] user: devlop
+GET /productpurchasevats
+USE eager loading detected
+  Productpurchasevat => [:employee]
+  Add to your finder: :includes => [:employee]
+Call stack
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:37:in `block in _app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+  /home/devlop/testbook_gst/app/views/productpurchasevats/index.html.erb:33:in `_app_views_productpurchasevats_index_html_erb__3592366192629418276_69978759329780'
+
+2018-05-13 17:28:06[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:57:in `update'
+
+2018-05-14 12:46:28[WARN] user: devlop
+PATCH /productpurchasevats/3
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:59:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `update'
+
+2018-05-14 21:47:40[WARN] user: devlop
+PATCH /productpurchasevats/3
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:59:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `update'
+
+2018-05-15 22:18:05[WARN] user: devlop
+PATCH /productpurchasevats/1
+USE eager loading detected
+  Purchproditemvat => [:product]
+  Add to your finder: :includes => [:product]
+Call stack
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:59:in `block in update'
+  /home/devlop/testbook_gst/app/controllers/productpurchasevats_controller.rb:58:in `update'
+

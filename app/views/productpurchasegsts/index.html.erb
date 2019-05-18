@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Productpurchasegsts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Chartaccount</th>
+      <th>Supplier</th>
+      <th>Employee</th>
+      <th>Rkpurchaseinvoiceno</th>
+      <th>Rkpurchasedate</th>
+      <th>Rkpurchaseduedate</th>
+      <th>Rktransportname</th>
+      <th>Rkpurchasegrno</th>
+      <th>Rkgoodsreceived</th>
+      <th>Rkpurchasenocase</th>
+      <th>Rkpurchasesubtotal</th>
+      <th>Rkpurchasetotaligst</th>
+      <th>Rkpurchasetotalcgst</th>
+      <th>Rkpurchasetotalsgst</th>
+      <th>Rkpurchasediscount</th>
+      <th>Rkpurchaseshipping</th>
+      <th>Rkpurchasegrandtotal</th>
+      <th>Rkpurchaseinwords</th>
+      <th>Rkpurchaseunittotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @productpurchasegsts.each do |productpurchasegst| %>
+      <tr>
+        <td><%= productpurchasegst.chartaccount %></td>
+        <td><%= productpurchasegst.supplier %></td>
+        <td><%= productpurchasegst.employee %></td>
+        <td><%= productpurchasegst.rkpurchaseinvoiceno %></td>
+        <td><%= productpurchasegst.rkpurchasedate %></td>
+        <td><%= productpurchasegst.rkpurchaseduedate %></td>
+        <td><%= productpurchasegst.rktransportname %></td>
+        <td><%= productpurchasegst.rkpurchasegrno %></td>
+        <td><%= productpurchasegst.rkgoodsreceived %></td>
+        <td><%= productpurchasegst.rkpurchasenocase %></td>
+        <td><%= productpurchasegst.rkpurchasesubtotal %></td>
+        <td><%= productpurchasegst.rkpurchasetotaligst %></td>
+        <td><%= productpurchasegst.rkpurchasetotalcgst %></td>
+        <td><%= productpurchasegst.rkpurchasetotalsgst %></td>
+        <td><%= productpurchasegst.rkpurchasediscount %></td>
+        <td><%= productpurchasegst.rkpurchaseshipping %></td>
+        <td><%= productpurchasegst.rkpurchasegrandtotal %></td>
+        <td><%= productpurchasegst.rkpurchaseinwords %></td>
+        <td><%= productpurchasegst.rkpurchaseunittotal %></td>
+        <td><%= link_to 'Show', productpurchasegst %></td>
+        <td><%= link_to 'Edit', edit_productpurchasegst_path(productpurchasegst) %></td>
+        <td><%= link_to 'Destroy', productpurchasegst, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Productpurchasegst', new_productpurchasegst_path %>

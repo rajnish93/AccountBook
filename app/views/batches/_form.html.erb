@@ -1,0 +1,67 @@
+<%= form_with(model: batch, local: true) do |form| %>
+  <% if batch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(batch.errors.count, "error") %> prohibited this batch from being saved:</h2>
+
+      <ul>
+      <% batch.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :rkbatchstatus %>
+    <%= form.check_box :rkbatchstatus, id: :batch_rkbatchstatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchno %>
+    <%= form.text_field :rkbatchno, id: :batch_rkbatchno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_id %>
+    <%= form.text_field :product_id, id: :batch_product_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchstock %>
+    <%= form.number_field :rkbatchstock, id: :batch_rkbatchstock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchpacking %>
+    <%= form.text_field :rkbatchpacking, id: :batch_rkbatchpacking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchpurchaserate %>
+    <%= form.text_field :rkbatchpurchaserate, id: :batch_rkbatchpurchaserate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchsalerate %>
+    <%= form.text_field :rkbatchsalerate, id: :batch_rkbatchsalerate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchwholesalerate %>
+    <%= form.text_field :rkbatchwholesalerate, id: :batch_rkbatchwholesalerate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchexpiry %>
+    <%= form.date_select :rkbatchexpiry, id: :batch_rkbatchexpiry %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkbatchmrp %>
+    <%= form.text_field :rkbatchmrp, id: :batch_rkbatchmrp %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

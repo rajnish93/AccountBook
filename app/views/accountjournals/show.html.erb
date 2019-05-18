@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rkvouchercode:</strong>
+  <%= @accountjournal.rkvouchercode %>
+</p>
+
+<p>
+  <strong>Chartaccount:</strong>
+  <%= @accountjournal.chartaccount %>
+</p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @accountjournal.sale %>
+</p>
+
+<p>
+  <strong>Rkvoucheramount:</strong>
+  <%= @accountjournal.rkvoucheramount %>
+</p>
+
+<p>
+  <strong>Rkvoucherdescription:</strong>
+  <%= @accountjournal.rkvoucherdescription %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @accountjournal.text %>
+</p>
+
+<p>
+  <strong>Rkvoucherdate:</strong>
+  <%= @accountjournal.rkvoucherdate %>
+</p>
+
+<%= link_to 'Edit', edit_accountjournal_path(@accountjournal) %> |
+<%= link_to 'Back', accountjournals_path %>

@@ -1,0 +1,68 @@
+<% content_for :title, "All Product Category" %>
+<div class="fixed-action-btn " style="bottom: 50px; right: 19px;">
+   <%= link_to new_productcategory_path do %>
+  <span class="fa fa-plus-circle fa-4x"></span>
+   <% end %>
+
+
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <h5>All Product Category</h5>
+        <div class="ibox-tools">
+          <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <a class="close-link">
+            <i class="fa fa-times"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ibox-content">
+
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover dataTables-example">
+            <thead>
+              <tr>
+                <th>Category Code</th>
+                <th>Category Name</th>
+                <th>Account Category</th>
+                <th width="101px">Buttons</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+            <% @productcategories.each do |f| %>
+
+              <tr class="">
+                <td><%= f.rkproductcategorycode %></td>
+                <td><%= f.rkproductcategoryname %></td>
+                <td><%= f.chartaccount_id %></td>
+                <td>
+                  <%= link_to productcategory_path(f.id), :class=>'btn btn-white btn-bitbucket', method: :delete, data: {confirm: 'Are you sure?'} do %>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  <% end %>
+                  <%= link_to edit_productcategory_path(f.id), :class=>'btn btn-white btn-bitbucket' do %>
+                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  <% end %>
+                  <%= link_to productcategory_path(f.id), :class=>'btn btn-white btn-bitbucket' do %>
+                      <i class="fa fa-print" aria-hidden="true"></i>
+                  <% end %>
+                </td>
+              </tr>
+
+            <% end %>
+
+            </tbody>
+
+
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
