@@ -1,12 +1,15 @@
 class ApplicationController < ActionController::Base
   include Pundit
+  helper_method :company_set
+  #include SelectCompany
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
   #after_action :verify_policy_scoped, unless: :devise_controller?
   set_current_tenant_through_filter
   #after_action :set_company_as_tenant, unless: :devise_controller?
-  before_action :set_company_as_tenant, unless: :devise_controller?
+  #before_action :set_company_as_tenant, unless: :devise_controller?
+  #before_action :company_set, unless: :devise_controller?
 
 
   # def set_company
@@ -29,6 +32,12 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def company_set
+    @set_company = Company.find(session[:company_id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to company_select_index_path
+
+  end
   def user_not_authorized
     flash[:alert] = "You are not cool enough to do this - go back from whence you came."
     redirect_to(error_index_path)
@@ -43,7 +52,7 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(user)
     if current_user.role !="default"
 
-      if Company.first
+      if Company.exists?
         company_select_index_path
       else
         companies_path

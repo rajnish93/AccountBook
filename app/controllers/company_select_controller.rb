@@ -2,10 +2,10 @@ class CompanySelectController < ApplicationController
   before_action :authenticate_user!
   #after_action :verify_authorized
   #skip_after_action :set_company_as_tenant, only: [:create, :index]
-  skip_before_action :set_company_as_tenant
+  #skip_before_action :set_company_as_tenant
   #skip_after_action :set_company_as_tenant
   #layout false
-  #include CompanySelectHelper
+
   layout "companyselect"
   def index
 
@@ -22,4 +22,5 @@ class CompanySelectController < ApplicationController
     session[:company_id] = company.id
     redirect_to dashboard_index_path, notice: "Company Selected"
   end
+
 end
