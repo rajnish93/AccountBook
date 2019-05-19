@@ -32,6 +32,20 @@ class ApplicationController < ActionController::Base
 
 
 
+  def after_sign_in_path_for(user)
+    if current_user.role !="default"
+
+      if Company.exists?
+        company_select_index_path
+      else
+        new_company_path
+      end
+    else
+      destroy_user_session_path
+
+    end
+
+  end
   private
 
   def company_set
@@ -57,20 +71,6 @@ class ApplicationController < ActionController::Base
     set_current_tenant(company)
   end
 
-  def after_sign_in_path_for(user)
-    if current_user.role !="default"
-
-      if Company.exists?
-        company_select_index_path
-      else
-        companies_path
-      end
-    else
-      destroy_user_session_path
-
-    end
-
-  end
 
 
   #    if  #  else  end else if current_user.role =="admin" companies_path else destroy_user_session_path end end #   company_select_index_path # elsif current_user.role!="default" #   company_select_index_path # else #error_index_path end  # def current_company(company)

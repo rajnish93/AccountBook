@@ -6,8 +6,10 @@ class CompaniesController < ApplicationController
   # GET /companys
   # GET /companys.json
   #skip_after_action :set_company_as_tenant
+  skip_before_action :company_set
   skip_before_action :set_company_as_tenant
   #skip_after_action :set_company_as_tenant
+  layout "companyselect"
   def index
   #  render :layout => false
   #  @companies = policy_scope(Company)
@@ -41,8 +43,11 @@ class CompaniesController < ApplicationController
 
     respond_to do |format|
       if @company.save
-        format.html { redirect_to companies_path, notice: 'Company was successfully created.' }
-        format.json { render :show, status: :created, location: @company }
+        session[:company_id] = @company.id
+        set_current_tenant(@company)
+        format.html{redirect_to dashboard_index_path, notice: "Company Selected"}
+        #format.html { redirect_to companies_path, notice: 'Company was successfully created.' }
+        #format.json { render :show, status: :created, location: @company }
       else
         format.html { render :new }
         format.json { render json: @company.errors, status: :unprocessable_entity }
