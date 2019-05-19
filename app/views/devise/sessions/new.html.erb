@@ -1,4 +1,4 @@
-<h2 style="font-size: 40px; margin-bottom: 40px; color: #f70b0b">GIKR
+<h2 style="font-size: 40px; margin-bottom: 40px; color: #f70b0b">
   <span style="color: #1ab394; font-weight: 900">Infotech</span></h2>
 <div class="ibox-content">
 <% if alert %>
@@ -7,7 +7,7 @@
   <%= alert %>
 </div>
 <% end %>
-  <h3 style="margin-bottom: 40px;">Welcome to gikrBook</h3>
+  <h3 style="margin-bottom: 40px;">Welcome to AccountBook</h3>
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-group m-t">
     <%= f.email_field :email,:placeholder=>"Email", :class=>"form-control", autofocus: true %>

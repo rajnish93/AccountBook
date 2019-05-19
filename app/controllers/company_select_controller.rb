@@ -1,6 +1,7 @@
 class CompanySelectController < ApplicationController
   before_action :authenticate_user!
   #after_action :verify_authorized
+  #after_action :verify_authorized
   #skip_after_action :set_company_as_tenant, only: [:create, :index]
   skip_before_action :company_set
   skip_before_action :set_company_as_tenant

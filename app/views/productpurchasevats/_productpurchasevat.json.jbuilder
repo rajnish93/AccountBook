@@ -1,2 +1,0 @@
-json.extract! productpurchasevat, :id, :chartaccount_id, :supplier_id, :employee_id, :rkpurchaseinvoiceno, :rkpurchasedate, :rkpurchaseduedate, :rktransportname, :rkpurchasegrno, :rkgoodsreceived, :rkpurchasenocase, :rkpurchaseccpercent, :rkpurchasesubtotal, :rkpurchasetotalcc, :rkpurchaseccadded, :rkpurchasediscount, :rkpurchaseshipping, :rkpurchasegrandtotal, :rkpurchaseinwords, :rkpurchaseunittotal, :rkpurchasevatpercent, :created_at, :updated_at
-json.url productpurchasevat_url(productpurchasevat, format: :json)

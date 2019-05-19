@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :carts
   resources :invoice_series do
     get 'set_default', on: :collection
   end
@@ -23,22 +22,12 @@ Rails.application.routes.draw do
   # get 'productpurchasevats#new'
   # get 'productpurchasevats#update_batches'
   resources :companies
-  resources :taxrates
-  resources :purchproditemgsts
-  resources :productpurchasegsts
   get 'error/index'
   resources :company_select, only: [:index, :create]
 
   get 'dashboard/index'
 
-  resources :batches
-  resources :products
-  resources :productcategories
   resources :suppliers
-  resources :sales
-  resources :customers
-  resources :accountjournals
-  resources :employees
   resources :departments
   resources :chartaccounts
   resources :accountgroups

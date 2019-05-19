@@ -39,43 +39,20 @@
         <ul class="nav nav-second-level collapse <%= is_active_controller('accountgroups', 'in') %>">
           <li class="<%= is_active_controller('accountgroups') %>"><%= link_to "Account Groups", accountgroups_path %></li>
           <li class="<%= is_active_controller('chartaccounts') %>"><%= link_to "Ledgers", chartaccounts_path %></li>
-          <li class="<%= is_active_controller('accountjournals') %>"><%= link_to "Account Journals", accountjournals_path %></li>
+
         </ul>
       </li>
     <% end %>
-    <% if policy(Product).index? %>
-      <li
-        class="<%= is_active_controller('products') %> || <%= is_active_controller('productcategories') %> || <%= is_active_controller('suppliers') %> || <%= is_active_controller('products') %> || <%= is_active_controller('batches') %> || <%= is_active_controller('productpurchasegsts') || is_active_controller('productpurchasevats') %> ">
-        <a href="#">
-          <i class="fa fa-diamond"></i>
-          <span class="nav-label">Product</span>
-          <span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level collapse <%= is_active_controller('products', 'in') %>">
-          <li class="<%= is_active_controller('suppliers') %>"><%= link_to "Supplier", suppliers_path %></li>
-          <li class="<%= is_active_controller('productcategories') %>"><%= link_to "Product Category", productcategories_path %></li>
-          <li class="<%= is_active_controller('products') %>"><%= link_to "Product", products_path %></li>
-          <li class="<%= is_active_controller('batches') %>"><%= link_to "Batch", batches_path %></li>
-          <li class="<%= is_active_controller('productpurchasegsts') %>"><%= link_to "GST Purchases", productpurchasegsts_path %></li>
-          <li class="<%= is_active_controller('productpurchasevats') %>"><%= link_to "VAT Purchases", productpurchasevats_path %></li>
-        </ul>
-      </li>
-    <% end %>
-    <% if policy(Customer).index? || policy(Sale).index? %>
-      <li class="<%= is_active_controller('customers') %> || <%= is_active_controller('sales') %> ">
-        <a href="#">
-          <i class="fa fa-diamond"></i>
-          <span class="nav-label">Sales</span>
-          <span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level collapse <%= is_active_controller('customers','in') %> || <%= is_active_controller('sales','in') %>">
-          <% if policy(Customer).index? %>
-            <li class="<%= is_active_controller('customers') %>"><%= link_to "Customer", customers_path %></li>
-          <% end %>
-          <% if policy(Sale).index? %>
-            <li class="<%= is_active_controller('sales') %>"><%= link_to "Sales", sales_path %></li>
-          <% end %>
-        </ul>
-      </li>
-    <% end %>
+    <% if policy(Supplier).index? %>
+      <li class="<%= is_active_controller('suppliers') %>">
+        <%= link_to suppliers_path do %>
+        <i class="fa fa-user"></i>
+        <span class="nav-label">Suppliers</span>
+      <% end %>
+    </li>
+  <% end %>
+
+
     <% if policy(Department).index? %>
       <li class="<%= is_active_controller('departments') %> || <%= is_active_controller('employees') %>">
         <a href="#">
@@ -84,7 +61,7 @@
           <span class="fa arrow"></span></a>
         <ul class="nav nav-second-level collapse <%= is_active_controller('departments', 'in') %>">
           <li class="<%= is_active_controller('departments') %>"><%= link_to "Department", departments_path %></li>
-          <li class="<%= is_active_controller('employees') %>"><%= link_to "Employee", employees_path %></li>
+
         </ul>
       </li>
     <% end %>
@@ -105,7 +82,7 @@
     </a>
     <ul class="nav nav-second-level">
       <li><%= link_to "Change Password", edit_user_registration_path %></li>
-      <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+      <li><%= link_to "Logout", destroy_user_session_path %></li>
     </ul>
   </li>
 </ul>
