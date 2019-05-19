@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   before_action :authenticate_user!
   after_action :verify_authorized
+  #before_action :company_set
 
   def index
     @orders = Order.all

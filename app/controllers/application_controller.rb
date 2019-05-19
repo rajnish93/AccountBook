@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   include Pundit
-  helper_method :company_set
+  #helper_method :company_set
+  #include SelectCompany
+  #helper_method :set_company_as_tenant
   #include SelectCompany
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
   protect_from_forgery with: :exception
@@ -8,8 +10,8 @@ class ApplicationController < ActionController::Base
   #after_action :verify_policy_scoped, unless: :devise_controller?
   set_current_tenant_through_filter
   #after_action :set_company_as_tenant, unless: :devise_controller?
-  #before_action :set_company_as_tenant, unless: :devise_controller?
-  #before_action :company_set, unless: :devise_controller?
+  before_action :company_set, unless: :devise_controller?
+  before_action :set_company_as_tenant, unless: :devise_controller?
 
 
   # def set_company
@@ -35,8 +37,14 @@ class ApplicationController < ActionController::Base
   def company_set
     @set_company = Company.find(session[:company_id])
   rescue ActiveRecord::RecordNotFound
-    redirect_to company_select_index_path
+    if @set_company.nil?
+      redirect_to company_select_index_path
 
+    else# @set_company.exists?
+      company = Company.find(session[:company_id])
+      #company = Company.find(1)
+      set_current_tenant(company)
+    end
   end
   def user_not_authorized
     flash[:alert] = "You are not cool enough to do this - go back from whence you came."
