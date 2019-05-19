@@ -1,7 +1,6 @@
 {
-  "name": "Start on Heroku: Ruby",
-  "description": "A barebones Rails app, which can easily be deployed to Heroku",
-  "image": "heroku/ruby",
+  "name": "AccountBook",
+  "description": "Some module of Accounting ERP.",
   "repository": "https://github.com/heroku/ruby-getting-started",
   "keywords": ["ruby", "rails" ],
   "addons": ["heroku-postgresql"]

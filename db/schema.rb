@@ -96,9 +96,11 @@ ActiveRecord::Schema.define(version: 2018_07_17_145326) do
     t.string "rksupplierzipcode"
     t.string "rksuppliercountry"
     t.bigint "chartaccount_id"
+    t.bigint "company_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["chartaccount_id"], name: "index_suppliers_on_chartaccount_id"
+    t.index ["company_id"], name: "index_suppliers_on_company_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -125,5 +127,6 @@ ActiveRecord::Schema.define(version: 2018_07_17_145326) do
   add_foreign_key "departments", "companies"
   add_foreign_key "orders", "companies"
   add_foreign_key "suppliers", "chartaccounts"
+  add_foreign_key "suppliers", "companies"
   add_foreign_key "users", "companies"
 end

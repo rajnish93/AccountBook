@@ -15,6 +15,7 @@ class CreateSuppliers < ActiveRecord::Migration[5.2]
       t.string :rksupplierzipcode
       t.string :rksuppliercountry
       t.belongs_to :chartaccount, foreign_key: true
+      t.belongs_to :company, foreign_key: true
 
       t.timestamps
     end
