@@ -18,13 +18,11 @@ capybara-*.html
 /public/system
 /public/*
 config/initializers/secret_token.rb
-config/environments/*.rb
+
 config/secrets.yml
-config/database.yml
 
 
-app/controllers/csv_files/*.csv
-app/controllers/csv_files/*.txt
+
 
 ## Environment normalisation:
 /.bundle
