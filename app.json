@@ -1,7 +1,0 @@
-{
-  "name": "AccountBook",
-  "description": "Some module of Accounting ERP.",
-  "repository": "https://github.com/heroku/ruby-getting-started",
-  "keywords": ["ruby", "rails" ],
-  "addons": ["heroku-postgresql"]
-}

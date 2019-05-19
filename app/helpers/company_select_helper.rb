@@ -1,3 +1,0 @@
-module CompanySelectHelper
-
-end
