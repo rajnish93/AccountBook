@@ -26,3 +26,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 /config/secrets.yml
+
+
+# ignore all logs
+*.log
