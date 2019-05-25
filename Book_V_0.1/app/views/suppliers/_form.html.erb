@@ -1,0 +1,87 @@
+<%= form_with(model: supplier, local: true) do |form| %>
+  <% if supplier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(supplier.errors.count, "error") %> prohibited this supplier from being saved:</h2>
+
+      <ul>
+      <% supplier.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :rksupplierstatus %>
+    <%= form.check_box :rksupplierstatus, id: :supplier_rksupplierstatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksuppliername %>
+    <%= form.text_field :rksuppliername, id: :supplier_rksuppliername %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksuppliertin %>
+    <%= form.text_field :rksuppliertin, id: :supplier_rksuppliertin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierpan %>
+    <%= form.text_field :rksupplierpan, id: :supplier_rksupplierpan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksuppliergstn %>
+    <%= form.text_field :rksuppliergstn, id: :supplier_rksuppliergstn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierddalic %>
+    <%= form.text_field :rksupplierddalic, id: :supplier_rksupplierddalic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierphone %>
+    <%= form.text_field :rksupplierphone, id: :supplier_rksupplierphone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplieraddress %>
+    <%= form.text_area :rksupplieraddress, id: :supplier_rksupplieraddress %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksuppliercity %>
+    <%= form.text_field :rksuppliercity, id: :supplier_rksuppliercity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierzone %>
+    <%= form.text_field :rksupplierzone, id: :supplier_rksupplierzone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierstate %>
+    <%= form.text_field :rksupplierstate, id: :supplier_rksupplierstate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksupplierzipcode %>
+    <%= form.text_field :rksupplierzipcode, id: :supplier_rksupplierzipcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rksuppliercountry %>
+    <%= form.text_field :rksuppliercountry, id: :supplier_rksuppliercountry %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chartaccount_id %>
+    <%= form.text_field :chartaccount_id, id: :supplier_chartaccount_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

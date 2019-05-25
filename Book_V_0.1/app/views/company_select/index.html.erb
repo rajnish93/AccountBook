@@ -1,0 +1,22 @@
+
+
+<h2 style="font-size: 40px; margin-bottom: 40px; color: #f70b0b">
+  <span style="color: #1ab394; font-weight: 900">Infotech</span></h2>
+<div class="ibox-content">
+<% if alert %>
+<div class="alert alert-danger">
+  <strong>Alert!</strong>
+  <%= alert %>
+</div>
+<% end %>
+
+
+  <div class="form-group m-t">
+    <%= form_with(model:@company, local: true) do |f| %> <%= f.select(:id,
+    options_for_select(@select),{:prompt=>"Select a Company"}, {
+    :class=>"form-control product",:required=>'' }) %>
+  </div>
+<%= f.submit 'Submit', :class => 'btn btn-sm btn-primary m-t-n-xs' %>
+<% end %>
+
+</div>

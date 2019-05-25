@@ -1,0 +1,145 @@
+<% content_for :title, "Edit Supplier" %>
+  <div class="ibox float-e-margins">
+    <div class="ibox-title">
+      <h5>Edit Supplier</h5>
+      <div class="ibox-tools">
+        <a class="collapse-link">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+        <a class="close-link">
+          <i class="fa fa-times"></i>
+        </a>
+      </div>
+    </div>
+    <div class="ibox-content">
+      <div class="row">
+        <%= form_for @supplier do|f| %>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="form-check">
+                <%= f.check_box :rksupplierstatus, id: :supplier_rksupplierstatus, :class=>"form-check-input" %>
+                <label class="form-check-label">Active</label>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="form-group">
+                <label>Supplier Name</label>
+                <%= f.text_field :rksuppliername, :placeholder=>"Enter Supplier Company Name", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>TIN</label>
+                <%= f.text_field :rksuppliertin, :placeholder=>"Enter TIN", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>PAN</label>
+                <%= f.text_field :rksupplierpan, :placeholder=>"Enter PAN", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>GSTIN</label>
+                <%= f.text_field :rksuppliergstn, :placeholder=>"Enter Supplier GSTIN No.", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Drug Licence</label>
+                <%= f.text_field :rksupplierddalic, :placeholder=>"Enter Supplier Drug Licence", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Phone</label>
+                <%= f.text_field :rksupplierphone, :placeholder=>"Enter Phone", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Address</label>
+                <%= f.text_field :rksupplieraddress, :placeholder=>"Enter Address of Supplier", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>City</label>
+                <%= f.text_field :rksuppliercity, :placeholder=>"Enter Supplier City", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Zone</label>
+                <%= f.text_field :rksupplierzone, :placeholder=>"Enter Supplier Zone", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>State</label>
+                <%= f.text_field :rksupplierstate, :placeholder=>"Enter Supplier State", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>ZipCode/Pincode</label>
+                <%= f.text_field :rksupplierzipcode, :placeholder=>"Enter Supplier Zipcode", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Country</label>
+                <%= f.text_field :rksuppliercountry, :placeholder=>"Enter Supplier Country", :class=>"form-control", :required=>'' %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Chart Account</label>
+                <%= collection_select( :supplier, :chartaccount_id, Chartaccount.all, :id, :rkcoaname, {}, { :multiple => false, :class=>'form-control m-b' } ) %>  </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12">
+          <div class="hr-line-dashed"></div>
+          <%= f.submit "Update Supplier", :class=>"btn btn-sm btn-primary pull-right m-t-n-xs" %>
+          <%= link_to 'Back', suppliers_path, :class=>"btn btn-sm btn-primary m-t-n-xs" %>
+        </div>
+        <div class="col-sm-12">
+          <div class="hr-line-dashed"></div>
+
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

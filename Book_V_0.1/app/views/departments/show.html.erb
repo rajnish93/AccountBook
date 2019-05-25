@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rkactive:</strong>
+  <%= @department.rkactive %>
+</p>
+
+<p>
+  <strong>Rkdeptcode:</strong>
+  <%= @department.rkdeptcode %>
+</p>
+
+<p>
+  <strong>Rkdeptname:</strong>
+  <%= @department.rkdeptname %>
+</p>
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>

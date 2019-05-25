@@ -1,24 +1,21 @@
-# README
+# AccountBook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Some module of Accounting ERP.
 
-Things you may want to cover:
 
-* Ruby version
+```sh
+$ git clone git@github.com:heroku/ruby-getting-started.git
+$ cd ruby-getting-started
+$ bundle install
+$ bundle exec rake db:create db:migrate
+$ heroku local
+```
 
-* System dependencies
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-* Configuration
+# Features of AccountBook
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Devise is used for Authentication and pundit is used for Authorization of different app module for different user levels (Admin, Billing, AccountEditor).
+### We can be able to keep data separated for different company in the same single database using multi-tenant features without apartment gem.
+### It doesnot uses postgresql schemas features for keeping data separated for different companies.
+### Uses .csv files for seeding multiple records into database.

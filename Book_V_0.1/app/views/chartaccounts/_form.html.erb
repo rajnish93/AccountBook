@@ -1,0 +1,32 @@
+<%= form_with(model: chartaccount, local: true) do |form| %>
+  <% if chartaccount.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chartaccount.errors.count, "error") %> prohibited this chartaccount from being saved:</h2>
+
+      <ul>
+      <% chartaccount.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :rkcoacode %>
+    <%= form.number_field :rkcoacode, id: :chartaccount_rkcoacode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rkcoaname %>
+    <%= form.text_field :rkcoaname, id: :chartaccount_rkcoaname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountgroup_id %>
+    <%= form.text_field :accountgroup_id, id: :chartaccount_accountgroup_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

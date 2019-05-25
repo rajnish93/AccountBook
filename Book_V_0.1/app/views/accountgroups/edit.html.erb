@@ -1,0 +1,51 @@
+<% content_for :title, "Add Account Group" %>
+
+<div class="ibox float-e-margins">
+  <div class="ibox-title">
+    <h5>Add Account Group</h5>
+    <div class="ibox-tools">
+      <a class="collapse-link">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+      <a class="close-link">
+        <i class="fa fa-times"></i>
+      </a>
+    </div>
+  </div>
+  <div class="ibox-content">
+    <div class="row">
+      <%= form_for @accountgroup do|f| %>
+          <div class="col-sm-6 b-r"><!--<h3 class="m-t-none m-b"></h3> -->
+            <div class="form-group">
+              <label>Account Code</label>
+              <%= f.text_field :rkaccountcode, :placeholder=>"Account Code", :class=>"form-control", :required=>'' %>
+            </div>
+
+
+          </div>
+          <div class="col-sm-6">
+
+            <div class="form-group">
+              <label>Account Name</label>
+              <%= f.text_field :rkaccountname, :placeholder=>"Account Name", :class=>"form-control", :required=>'' %>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label>Account Category</label>
+                  <%= f.select :rkaccounttype, options_for_select(['Assets', 'Liabilities', 'Income', 'Expenditure'], :selected => f.object.rkaccounttype), {}, {:class=>'form-control m-b', :required=>''} %>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="hr-line-dashed"></div>
+            <%= f.submit "Update Account Group", :class=>"btn btn-sm btn-primary pull-right m-t-n-xs" %>
+            <%= link_to 'Back', accountgroups_path, :class=>"btn btn-sm btn-primary m-t-n-xs" %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
