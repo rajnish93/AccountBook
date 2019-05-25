@@ -4,14 +4,14 @@ Some module of Accounting ERP.
 
 
 ```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
+$ git clone https://github.com/byionline/AccountBook.git
+$ cd AccountBook/Book_V_0.1
 $ bundle install
-$ bundle exec rake db:create db:migrate
-$ heroku local
+$ bundle exec rake db:create db:migrate db:seed
+$ rails s
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Your app should now be running on [localhost:3000](http://localhost:3000/).
 
 # Features of AccountBook
 
