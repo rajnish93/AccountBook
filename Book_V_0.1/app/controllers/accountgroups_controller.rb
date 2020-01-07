@@ -80,3 +80,9 @@ class AccountgroupsController < ApplicationController
       params.require(:accountgroup).permit(:rkaccountcode, :rkaccountname, :rkaccounttype)
     end
 end
+
+
+
+
+
+
