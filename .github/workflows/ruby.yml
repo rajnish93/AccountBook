@@ -22,10 +22,10 @@ jobs:
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+          ruby-version: 2.5.1
+      
+      
+     
       - name: Build and run tests
         env:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
