@@ -22,7 +22,7 @@ jobs:
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.5.1
+          ruby-version: 2.5.x
       
       
      
