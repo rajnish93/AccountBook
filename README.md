@@ -1,3 +1,8 @@
+[[params.social]]
+icon = "linkedin"
+icon_pack = "fa"
+link = "//linkedin.com/in/krajnishsingh"
+
 # AccountBook
 
 Some module of Accounting ERP.
@@ -11,6 +16,10 @@ $ rails s
 ```
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
+
+### Video Link
+
+https://lnkd.in/fnPDabt
 
 # Features of AccountBook
 
@@ -37,3 +46,9 @@ If user role is `billing` only billing related view is allowed to access to the 
 ### kaminari
 
 is used for pagination in data
+
+### Login
+
+Any users are allowed to signup but only admin is allowed to provide permission to the new user for getting login to the website.
+At First signup user is given a role as `Admin` and create a new `company`. Now users needs to change is permission to become admin of that company otherwise admin will not be able to select the company after next login. This is same for all user whose permission is changed
+After first signup any user who signup is given a role as `default` & default users are not allowed to login to the site

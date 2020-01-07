@@ -1,3 +1,8 @@
+[[params.social]]
+icon = "linkedin"
+icon_pack = "fa"
+link = "//linkedin.com/in/krajnishsingh"
+
 # AccountBook
 
 Some module of Accounting ERP.
