@@ -34,9 +34,9 @@ jobs:
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
         
         run: |
-          sudo apt-get -yqq install libpq-dev
-          gem install bundler
           cd Book_V_0.1
+          sudo apt-get -yqq install libpq-dev
+          gem install bundler:1.16.2
           bundle config
           bundle install --jobs 4 --retry 3
           bundle exec rails db:prepare
