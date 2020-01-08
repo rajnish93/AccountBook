@@ -19,10 +19,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+        with:
+            repository: AccountBook/Book_V_0.1
+            #path: my-tools
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.5.x
+          ruby-version: 2.5.1
       
       
      
