@@ -22,10 +22,11 @@ jobs:
         with:
             repository: AccountBook/Book_V_0.1
             #path: my-tools
-      - name: Setup Ruby
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 2.5.1
+     # - name: Setup Ruby
+      #  uses: actions/setup-ruby@v1
+       # with:
+        #  ruby-version: 2.5.1
+          #sudo apt-get -yqq install libpq-dev
       
       
      
@@ -38,7 +39,8 @@ jobs:
         
         run: |
           cd Book_V_0.1
-          sudo apt-get -yqq install libpq-dev
+          rvm install 2.5.1
+          
           gem install bundler:1.16.2
           bundle config
           bundle install --jobs 4 --retry 3
