@@ -20,9 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         with:
-            repository: AccountBook
+            #repository: AccountBook
             #/Book_V_0.1
-            #path: my-tools
+            path: Book_V_0.1
      # - name: Setup Ruby
       #  uses: actions/setup-ruby@v1
        # with:
