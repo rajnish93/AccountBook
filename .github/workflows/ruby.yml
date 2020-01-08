@@ -6,7 +6,7 @@ jobs:
     services:
       db:
         image: postgres:11
-        ports: ['5432:5432']
+        ports: ["5432:5432"]
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -14,37 +14,32 @@ jobs:
           --health-retries 5
       redis:
         image: redis
-        ports: ['6379:6379']
+        ports: ["6379:6379"]
         options: --entrypoint redis-server
 
     steps:
       - uses: actions/checkout@v1
-        with:
-            #repository: AccountBook
-            #/Book_V_0.1
-            path: Book_V_0.1
-     # - name: Setup Ruby
+
+      # - name: Setup Ruby
       #  uses: actions/setup-ruby@v1
-       # with:
-        #  ruby-version: 2.5.1
-          #sudo apt-get -yqq install libpq-dev
-      
-      
-     
+      # with:
+      #  ruby-version: 2.5.1
+      #sudo apt-get -yqq install libpq-dev
+
       - name: Build and run tests
         env:
           DATABASE_URL: postgres://postgres:@localhost:5432/test
           REDIS_URL: redis://localhost:6379/0
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-        
+
         run: |
-          cd Book_V_0.1
+
           gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
           curl -sSL https://get.rvm.io | bash -s stable
           source ~/.rvm/scripts/rvm
           rvm install 2.5.1
-          
+
           gem install bundler:1.16.2
           bundle config
           bundle install --jobs 4 --retry 3

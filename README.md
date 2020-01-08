@@ -4,7 +4,7 @@ Some module of Accounting ERP.
 
 ```sh
 $ git clone https://github.com/byionline/AccountBook.git
-$ cd AccountBook/Book_V_0.1
+$ cd AccountBook
 $ bundle install
 $ rails db:drop db:create db:migrate db:seed
 $ rails s

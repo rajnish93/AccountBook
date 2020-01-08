@@ -14,7 +14,9 @@ development:
 test:
   <<: *default
   database: project_test
-
+  username: project
+  password:
+  #<%= ENV['gikr-PROJECT_DATABASE_PASSWORD'] %>
 
 production:
   <<: *default
